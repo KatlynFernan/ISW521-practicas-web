@@ -1,14 +1,39 @@
 
 <!-- Tutorial HTML -->
 <!-- Documentación al precionar ctrl + } -->
-
+<!-- </> etiquetas de cierre. Funciona como cajas anidadas -->
+<!-- ¿Qué significa INDEX.HTML?
+ Este es el archivo principal por defecto de una carpeta web
+ Supongamos esta URL: www.misitio.com
+ el servidor realmente va a buscar: www.misitio.com/index.html
+ Podríamos decir en resumen, es una página inicial por defecto. 
+ Se llama index porque históricamente significa inicio, índice,
+ entrada principal. Se podría llamar de otra manera, pero muchos 
+ servidores no la mostrarán automáticamente y se tendría que escribir
+ manuelmente toda la URL incluyengo el /pagina.html
+ Index = Entrada automática
+ .html = Extensión que le dice al sistema, este archivo contiene HTML
+ 
+ Entonces el navegador sabe interpretar etiquetas HTML
+ renderizar contenido web y construir el DOM.
+ 
+ 
+ Internamente cuando abre el index.html, el navegador:
+ 1. Lee el archivo
+ 2. Interpreta HTML 
+ 3. Construye la estructura visual 
+ 4. Crea el DOM (Document Object Model - Forma en la que el navegador
+ representa una página HTML como una estructura de objetos que JavaScript 
+ puede entender y modificar)
+ 5. Renderiza la página-->
 
 
 
 <!-- Indicamos que este documento usa HTML5
  Anteriormente existian HTML4 Y XHTML.
  El navegador necesita saber cómo interpretar la página 
- y qué reglas usar. ¿Qué pasa si no se pone?
+ y qué reglas usar. 
+ ¿Qué pasa si no se pone?
  El navegador entra en algo llamado Quirks Mode, 
  esto puede romper estilos, interpretar raro el CSS 
  y comportarse distinto -->
@@ -34,12 +59,17 @@ Body=Lo que ve el usuario  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Definimos el nombre de la pestaña del navegador.Tambien sirve para SEO, 
      favoritos, historial y buscadores -->
-    <title>
-        Prácticas Web Katlyn Fernández
-    </title>
+    <title>Prácticas Web Katlyn Fernández</title>
 </head>
-<!-- Esta sección contiene todo lo visible  -->
+<!-- Esta sección contiene todo lo visible: Textos, imágenes, botones, forms, etc.
+ Head= Configuración y Body= Demostración -->
 <body>
+    <!-- Heading 1 = Título Principal
+     Su importancia: Significado semántico, importancia jerárquica,
+     accesibilidad y SEO. 
+     h1 → título principal
+     h2 → subtítulo
+     h3 → subsección-->
     <h1>
         Hola Web
     </h1>
